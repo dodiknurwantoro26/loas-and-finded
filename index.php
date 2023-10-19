@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css"/>
 
-    <title>Document</title>
+    <title>WELCOME</title>
 </head>
 <body>
     
 
 <div class="page1">
-       <p class="apa-yang-kamu-butuhkan">APA YANG KAMU BUTUHKAN?</p> 
+       <p class="apa-yang-kamu-butuhkan">APA YANG KAMU BUTUHKAN?</p>
     
 
     <div class="group1"> 
