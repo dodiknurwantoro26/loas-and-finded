@@ -3,5 +3,5 @@ function menemukan_barang() {
   }
 
   function kehilangan_barang() {
-    window.location.href = "page2.html";
+    window.location.href = "Page_Lost1.html";
   }
