@@ -21,19 +21,8 @@
                         Jenis Barang :
                     </label>
                 </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="jns_brg">
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="id_jns_brg">
             </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Nama Barang :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="nm_barang">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
                         Brand :
                     </label>
                 </div>
@@ -89,8 +78,8 @@
         if(isset($_POST['Submit']))
         {
             $id_member = $_POST['id_member'];
-            $jns_brg = $_POST['jns_brg'];
-            $nm_barang = $_POST['nm_barang'];
+            $id_jns_brg = $_POST['id_jns_brg'];
+            //$nm_barang = $_POST['nm_barang'];
             $brand = $_POST['brand'];
             $deskripsi = $_POST['deskripsi'];
             $tgl_brg_ditemukan = $_POST['tgl_brg_ditemukan'];
@@ -101,7 +90,7 @@
             include("connect.php");
 // insert motor data ke tabel
             $hasil = mysqli_query($connection, "INSERT INTO barang_hilang (id_member,id_jns_brg,brand,deskripsi,tgl_brg_ditemukan,lokasi_brg_ditemukan,status_barang,foto_barang) 
-            VALUES('$id_member', '$jns_brg', '$nm_barang', '$brand', '$deskripsi','$tgl_brg_ditemukan','$lokasi_brg_ditemukan','$status_barang','$foto_barang') ");
+                                                                   VALUES('$id_member', '$id_jns_brg', '$brand', '$deskripsi','$tgl_brg_ditemukan','$lokasi_brg_ditemukan','$status_barang','$foto_barang') ");
 // menampilkan pesan ketika berhasil di tambahkan
             echo "Data Barang Hilang Berhasil DiTambahkan. <a href='index.php'>Data Barang HIlang</a>";
         }
