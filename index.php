@@ -38,7 +38,7 @@ $hasil = mysqli_query($connection, "SELECT * FROM barang_hilang ORDER by id_brg_
             </thead>
             <tbody>
                 <?php
-                while($motor = mysqli_fetch_array($hasil))
+                while($barang_hilang = mysqli_fetch_array($hasil))
                 {
                     echo "<tr>";
                     echo "<td>".$barang_hilang['id_member']."</td>";
