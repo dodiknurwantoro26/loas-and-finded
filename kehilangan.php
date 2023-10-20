@@ -10,42 +10,58 @@
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
                     <label>
-                        Nama :
+                        ID Member :
                     </label>
                 </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="nama">
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="id_member">
             </div>
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
                     <label>
-                        Merk :
+                        Jenis Barang :
                     </label>
                 </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="merk">
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="jns_brg">
             </div>
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
                     <label>
-                        Plat :
+                        Nama Barang :
                     </label>
                 </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="plat">
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="nm_barang">
             </div>
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
                     <label>
-                        Telp :
+                        Brand :
                     </label>
                 </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="telp">
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="brand">
             </div>
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
                     <label>
-                        Email :
+                        Deskripsi :
                     </label>
                 </div>
                 <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="email">
+            </div>
+            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
+                <div style="margin-bottom: 5px;">
+                    <label>
+                        Tgl Hilang :
+                    </label>
+                </div>
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="tgl_hilang">
+            </div>
+            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
+                <div style="margin-bottom: 5px;">
+                    <label>
+                        Lokasi :
+                    </label>
+                </div>
+                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="lokasi_hilang">
             </div>
             <div>
                 <input type="submit" name="Submit" style="background: blue; border-radius: 5px; padding: 5px; border: 2px solid blue; color: white;" value="Tambahkan">
