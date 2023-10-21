@@ -48,45 +48,39 @@
 </head>
 <body>
     <div class="container">
-        <h1>Tambahkan Barang Hilang</h1>
-        <form method="POST" action="backend/proses_crud.php?act=inper" enctype="multipart/form-data">
+        <h1>Daftar User</h1>
+        <!--form action="backend/proses_crud.php?act=inuser" method="post" enctype="multipart/form-data"-->
             <div class="form-group">
-                <label for="serial_number">Waktu Kehilangan</label>
-                <input type="text" class="form-control" name="waktu_kehilangan" autofocus required />
+                <label for="nama">Nama Lengkap</label>
+                <input name="nama" type="text" placeholder="Nama Lengkap" required>
             </div>
             <div class="form-group">
-                <label for="part_number">Lokasi</label>
-                <input type="text" class="form-control" name="lokasi" required />
+                <label for="telp">No Telepon</label>
+                <input name="telp" type="text" placeholder="No Telepon" required>
             </div>
             <div class="form-group">
-                <label for="kategori">Kategori</label>
-                <select class="form-control" name="kategori" required>
-                    <option value=""></option>
-                    <option> Kendaraan</option>
-                    <option> Elektronik</option>
-                    <option> Aksessoris</option>
+                <label for="jenis">Jenis Kelamin</label>
+                <select name="jenis" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="merek">Merek</label>
-                <input type="text" class="form-control" name="merek" />
+                <label for="username">Username</label>
+                <input name="username" type="text" placeholder="Username" required>
             </div>
             <div class="form-group">
-                <label for="deskripsi">Deskripsi</label>
-                <textarea name="deskripsi" class="form-control" autocomplete></textarea>
+                <label for="password">Password</label>
+                <input name="password" type="text" placeholder="Password" required>
             </div>
             <div class="form-group">
-                <label for="notes">Notes</label>
-                <textarea name="notes" class="form-control"></textarea>
+                <label for="file">Upload Gambar</label>
+                <input name="file" id="file_gambar" type="file" accept="image/*" required>
+                <img class="img-thumbnail" src="" alt="" id="prev_foto" width="70">
             </div>
             <div class="form-group">
-                <label for="gbrper">Foto</label>
-                <input type="file" class="form-control" name="gbrper" required />
-                <img src="gambar/80x80.png" id="preview" class="img-thumbnail">
-            </div>
-            <div class="form-group">
-                <button onclick="goBack()" class="btn btn-default" type="button">Cancel</button>
-                <button class="btn btn-primary" type="submit">Save Change</button>
+                <button type="button" onclick="goBack()">Cancel</button>
+                <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
             </div>
         </form>
     </div>
