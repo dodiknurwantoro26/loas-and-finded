@@ -1,7 +1,7 @@
 <?php
 // buat koneksi database dengan connect file
 include("connect.php");
-// fetch semua data motor dari database
+// fetch semua data barang_hilang dari database
 $hasil = mysqli_query($connection, "SELECT * FROM barang_hilang ORDER by id_brg_hilang DESC");
 ?>
 <html>
@@ -50,7 +50,7 @@ $hasil = mysqli_query($connection, "SELECT * FROM barang_hilang ORDER by id_brg_
                     echo "<td>".$barang_hilang['status_barang']."</td>";
                     echo "<td>".$barang_hilang['foto_barang']."</td>";
                     echo "<td>
-                    <a href='edit.php?id=$barang_hilang[id_brg_hilang]'>Edit</a> | <a href='delete.php?id=$barang_hilang[id_brg_hilang]'>Delete</a></td>";
+                    <a href='edit_kehilangan.php?id=$barang_hilang[id_brg_hilang]'>Edit</a> | <a href='delete_kehilangan.php?id=$barang_hilang[id_brg_hilang]'>Delete</a></td>";
                     echo "</tr>";
                 }
                 ?>
