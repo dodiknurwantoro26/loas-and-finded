@@ -4,18 +4,22 @@ include("connect.php");
 // cek jika apakah form dikirimkan untuk update barang_hilang, lalu arahkan ke index setelah berhasil di update
 if(isset($_POST['update']))
 {
-    $id_member = $_POST['id_member'];
-    $id_jns_brg = $_POST['id_jns_brg'];
-    $brand = $_POST['brand'];
-    $deskripsi = $_POST['deskripsi'];
-    $tgl_brg_ditemukan = $_POST['tgl_brg_ditemukan'];
-    $lokasi_brg_ditemukan = $_POST['lokasi_brg_ditemukan'];
-    $status_barang = $_POST['status_barang'];
-    $foto_barang = $_POST['foto_barang'];
+    $id                     = $_POST['id'];
+    $id_member              = $_POST['id_member'];
+    $id_jns_brg             = $_POST['id_jns_brg'];
+    $brand                  = $_POST['brand'];
+    $deskripsi              = $_POST['deskripsi'];
+    $tgl_brg_ditemukan      = $_POST['tgl_brg_ditemukan'];
+    $lokasi_brg_ditemukan   = $_POST['lokasi_brg_ditemukan'];
+    $status_barang          = $_POST['status_barang'];
+    $foto_barang            = $_POST['foto_barang'];
 // update barang_hilang data
-    $hasil = mysqli_query($connection, "UPDATE barang_hilang SET id_member='$id_member', id_jns_brg='$id_jns_brg', brand='$brand', deskripsi='$deskripsi', tgl_brg_ditemukan='$tgl_brg_ditemukan', lokasi_brg_ditemukan='$lokasi_brg_ditemukan', status_barang='$status_barang', foto_barang='$foto_barang' WHERE id_brg_hilang='$id'");
+    $query = "UPDATE barang_hilang SET id_member='$id_member', id_jns_brg='$id_jns_brg', brand='$brand', deskripsi='$deskripsi', tgl_brg_ditemukan='$tgl_brg_ditemukan', lokasi_brg_ditemukan='$lokasi_brg_ditemukan', status_barang='$status_barang', foto_barang='$foto_barang' WHERE id_brg_hilang=$id";
+    $hasil = mysqli_query($connection,$query );
+   // echo "<script>alert('Data yang anda Update sukses');window.location='edit_kehilangan.php'</script>";
     // lakukan redirect ke index untuk melihat hasil dari update data
     header("Location: index.php");
+   
 }
 ?>
 <?php
@@ -44,9 +48,9 @@ while($data = mysqli_fetch_array($hasil))
     </head>
     <body>
         <h2>
-            Edit Data Pengguna
+            Edit Data Barang
         </h2>
-        <form method="post" action="edit_kehilangan.php" name="formupload">
+        <form method="post" action="edit_kehilangan.php" name="formupdate">
             <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>"/>
             <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
                 <div style="margin-bottom: 5px;">
