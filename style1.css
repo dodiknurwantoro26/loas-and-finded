@@ -1,0 +1,90 @@
+*
+{
+    margin : 0;
+    padding: 0;
+    
+    
+}
+.page1{
+
+  box-sizing: border-box;
+  padding: 0rem 20rem 20rem 20rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(179.33deg, #18d2dd 0.58%, rgba(195, 251, 255, 0) 98.56%);
+}
+.page1 .apa-yang-kamu-butuhkan {
+    margin: 4rem 4rem 4rem 4rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #000000;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.page1 .group1 {
+    margin: 1rem 1rem 4rem 1rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.page1 .group1 .gambar1{
+  margin-right: 20rem;
+  width: 15rem;
+  height: 15rem;
+  border: solid 0.1rem #3f2f2f;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(find.jpg);
+  border-radius: 12.5rem;
+  flex-shrink: 0;
+
+}
+.page1 .group1 .gambar2{
+    width: 15rem;
+    height: 15rem;
+border: solid 0.1rem #000000;
+box-sizing: border-box;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url(lose.png);
+border-radius: 12.5rem;
+flex-shrink: 0;
+}
+
+.page1 .group2{
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+ .page1 .group2 .menemukan-barang{
+    margin-right: 15rem;
+    width: auto;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+ }
+ .page1 .group2 .kehilangan-barang{
+    font-size: 2rem;
+    font-weight: 300;
+    width: auto;
+    color: #000000;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+ }
