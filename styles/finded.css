@@ -1,0 +1,236 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 100%;
+}.desktop-1-DNg {
+  box-sizing: border-box;
+  padding: 1.9rem 15.1rem 18.5rem 20.5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  row-gap: 5.1rem;
+  align-items: center;
+  display: cover;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+
+ /** background-image: url('../assets/desktop-1-bg.png') ; */
+
+}
+.desktop-1-DNg .auto-group-nh4w-8tx {
+  width: 100%;
+  height: 23.4rem;
+  position: relative;
+  flex-shrink: 0;
+  margin-bottom: 5rem;
+}
+.desktop-1-DNg .auto-group-nh4w-8tx .lost-and-finded-logo-1-1-AjA {
+  width: 28rem;
+  height: 21.2rem;
+  position: absolute;
+  left: 37.5rem;
+  top: 0;
+  object-fit: cover;
+  vertical-align: top;
+}
+.desktop-1-DNg .auto-group-nh4w-8tx .anda-adalah-orang-baik-ingatlah-kebaikan-akan-terus-mengalir-cbA {
+  width: 108.4rem;
+  height: 4.4rem;
+  position: absolute;
+  left: 0;
+  top: 19rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn {
+  margin: 0rem 9.2rem 0rem 3.8rem;
+  width: calc(100% - 13rem);
+  height: 19.1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn .auto-group-mah9-KP6 {
+  margin-right: 8.4rem;
+  width: 43.5rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn .auto-group-mah9-KP6 .auto-group-1uqd-dua {
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+  padding: 2.4rem 2rem 1.5rem 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn .auto-group-mah9-KP6 .auto-group-tfeb-Ss2 {
+  box-sizing: border-box;
+  padding: 2.4rem 2rem 1.5rem 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn .auto-group-tpeb-gWU {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  padding: 2.7rem 2rem;
+  width: 43.5rem;
+  height: 18.2rem;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-7ngs-cDn .auto-group-tpeb-gWU .ciri-ciri-contoh-warna-bentuk-model-CUp {
+  max-width: 26.6rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+}
+.desktop-1-DNg .auto-group-n4lj-USL {
+  margin: 0rem 9.2rem 0rem 3.8rem;
+  width: calc(100% - 13rem);
+  height: 18.2rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-bwyr-bmr {
+  margin-right: 8.4rem;
+  width: 43.5rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-bwyr-bmr .auto-group-rqz1-kPr {
+  margin-bottom: 4.2rem;
+  box-sizing: border-box;
+  padding: 2.4rem 3.1rem 1.5rem 1.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-bwyr-bmr .auto-group-rqz1-kPr .kategori-Epp {
+  margin-right: 25.9rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-bwyr-bmr .auto-group-rqz1-kPr .vector-1-NRE {
+  margin-top: 0.3rem;
+  width: 3.3rem;
+  height: 1.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-bwyr-bmr .auto-group-xwoq-HYC {
+  box-sizing: border-box;
+  padding: 2rem 2rem 1.9rem 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-oglk-9qJ {
+  box-sizing: border-box;
+  padding: 3.1rem 5.4rem 2.1rem 2.9rem;
+  width: 43.5rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-oglk-9qJ .upload-1-tH6 {
+  margin: 0rem 0rem 0.8rem 1.5rem;
+  width: 15.7rem;
+  height: 9.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-n4lj-USL .auto-group-oglk-9qJ .ambil-gambar-atau-upload-file-CHn {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #8d8b8b;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-1-DNg .auto-group-gl5h-dtt {
+  margin-top: 5rem;
+  margin-left: 67.8rem;
+  width: 22.2rem;
+  height: 6rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: #64cfd1;
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
