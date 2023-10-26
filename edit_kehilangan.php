@@ -1,124 +1,108 @@
 <?php
 // masukan file koneksi database
 include("connect.php");
-// cek jika apakah form dikirimkan untuk update barang_hilang, lalu arahkan ke index setelah berhasil di update
+
+// cek jika apakah form dikirimkan untuk update, lalu arahkan ke index setelah berhasil di update
 if(isset($_POST['update']))
 {
-    $id                     = $_POST['id'];
-    $id_member              = $_POST['id_member'];
-    $id_jns_brg             = $_POST['id_jns_brg'];
-    $brand                  = $_POST['brand'];
-    $deskripsi              = $_POST['deskripsi'];
-    $tgl_brg_ditemukan      = $_POST['tgl_brg_ditemukan'];
-    $lokasi_brg_ditemukan   = $_POST['lokasi_brg_ditemukan'];
-    $status_barang          = $_POST['status_barang'];
-    $foto_barang            = $_POST['foto_barang'];
-// update barang_hilang data
-    $query = "UPDATE barang_hilang SET id_member='$id_member', id_jns_brg='$id_jns_brg', brand='$brand', deskripsi='$deskripsi', tgl_brg_ditemukan='$tgl_brg_ditemukan', lokasi_brg_ditemukan='$lokasi_brg_ditemukan', status_barang='$status_barang', foto_barang='$foto_barang' WHERE id_brg_hilang=$id";
-    $hasil = mysqli_query($connection,$query );
-   // echo "<script>alert('Data yang anda Update sukses');window.location='edit_kehilangan.php'</script>";
+    $id = $_POST['id_org_hilang'];
+    $id_member = $_POST['id_member'];
+    $id_jns_kelamin = $_POST['id_jns_kelamin'];
+    $nama_orang_hilang = $_POST['nama_orang_hilang'];
+    $tgl_lahir = $_POST['tgl_lahir'];
+    $deskripsi_fisik = $_POST['deskripsi_fisik'];
+    $tgl_ditemukan = $_POST['tgl_ditemukan'];
+    $lokasi_org_ditemukan = $_POST['lokasi_org_ditemukan'];
+    $status_orang = $_POST['status_orang'];
+    $foto_orang = $_POST['foto_orang'];
+
+    // update org_hilang data
+    $query = "UPDATE org_hilang SET id_member='$id_member', id_jns_kelamin='$id_jns_kelamin', nama_orang_hilang='$nama_orang_hilang', tgl_lahir='$tgl_lahir', deskripsi_fisik='$deskripsi_fisik', tgl_ditemukan='$tgl_ditemukan', lokasi_org_ditemukan='$lokasi_org_ditemukan', status_orang='$status_orang', foto_orang='$foto_orang' WHERE id_org_hilang=$id";
+    $hasil = mysqli_query($connection, $query);
+    
     // lakukan redirect ke index untuk melihat hasil dari update data
     header("Location: index.php");
-   
 }
-?>
-<?php
+
 // GET id dari url
 $id = $_GET['id'];
-// Fetch barang_hilang data berdasarkan id
-$hasil = mysqli_query($connection, "SELECT * FROM
- barang_hilang WHERE id_brg_hilang=$id");
+
+// Fetch org_hilang data berdasarkan id
+$hasil = mysqli_query($connection, "SELECT * FROM org_hilang WHERE id_org_hilang=$id");
 
 while($data = mysqli_fetch_array($hasil))
- {
+{
     $id_member = $data['id_member'];
-    $id_jns_brg = $data['id_jns_brg'];
-    $brand = $data['brand'];
-    $deskripsi = $data['deskripsi'];
-    $tgl_brg_ditemukan = $data['tgl_brg_ditemukan'];
-    $lokasi_brg_ditemukan = $data['lokasi_brg_ditemukan'];
-    $status_barang = $data['status_barang'];
-    $foto_barang = $data['foto_barang'];
- }
-
+    $id_jns_kelamin = $data['id_jns_kelamin'];
+    $nama_orang_hilang = $data['nama_orang_hilang'];
+    $tgl_lahir = $data['tgl_lahir'];
+    $deskripsi_fisik = $data['deskripsi_fisik'];
+    $tgl_ditemukan = $data['tgl_ditemukan'];
+    $lokasi_org_ditemukan = $data['lokasi_org_ditemukan'];
+    $status_orang = $data['status_orang'];
+    $foto_orang = $data['foto_orang'];
+}
 ?>
+
 <html>
     <head>
         <title>Edit</title>
     </head>
     <body>
         <h2>
-            Edit Data Barang
+            Edit Data Orang Hilang
         </h2>
         <form method="post" action="edit_kehilangan.php" name="formupdate">
-            <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>"/>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        ID Member :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="id_member" value="<?php echo $id_member; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        ID Jenis Barang :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="id_jns_brg" value="<?php echo $id_jns_brg; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Brand :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="brand" value="<?php echo $brand; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Deskripsi :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="deskripsi" value="<?php echo $deskripsi; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Tgl Barang ditemukan :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="tgl_brg_ditemukan" value="<?php echo $tgl_brg_ditemukan; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Lokasi Barang ditemukan :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="lokasi_brg_ditemukan" value="<?php echo $lokasi_brg_ditemukan; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Status Barang :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="status_barang" value="<?php echo $status_barang; ?>">
-            </div>
-            <div style="width: 100%; display: block; margin-top: 10px; margin-bottom: 10px;">
-                <div style="margin-bottom: 5px;">
-                    <label>
-                        Foto Barang :
-                    </label>
-                </div>
-                <input type="text" style="width: 100%; border: 2px solid black; border-radius: 5px;" name="foto_barang" value="<?php echo $foto_barang; ?>">
-            </div>
+            <input type="hidden" name="id_org_hilang" value="<?php echo $_GET['id']; ?>"/>
+            
             <div>
-                <input type="submit" name="update" style="background: blue; border-radius: 5px; padding: 5px; border: 2px solid blue; color: white;" value="Edit">
-                <a href='index.php' style="border: 2px solid red; padding: 5px; border-radius: 5px; color: white; background-color: red; text-decoration: none;">Cancel</a>
+                <label>ID Member:</label>
+                <input type="text" name="id_member" value="<?php echo $id_member; ?>">
+            </div>
+
+            <div>
+                <label>ID Jenis Kelamin:</label>
+                <input type="text" name="id_jns_kelamin" value="<?php echo $id_jns_kelamin; ?>">
+            </div>
+
+            <div>
+                <label>Nama Orang Hilang:</label>
+                <input type="text" name="nama_orang_hilang" value="<?php echo $nama_orang_hilang; ?>">
+            </div>
+
+            <div>
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tgl_lahir" value="<?php echo $tgl_lahir; ?>">
+            </div>
+
+            <div>
+                <label>Deskripsi Fisik:</label>
+                <input type="text" name="deskripsi_fisik" value="<?php echo $deskripsi_fisik; ?>">
+            </div>
+
+            <div>
+                <label>Tanggal Ditemukan:</label>
+                <input type="date" name="tgl_ditemukan" value="<?php echo $tgl_ditemukan; ?>">
+            </div>
+
+            <div>
+                <label>Lokasi Orang Ditemukan:</label>
+                <input type="text" name="lokasi_org_ditemukan" value="<?php echo $lokasi_org_ditemukan; ?>">
+            </div>
+
+            <div>
+                <label>Status Orang:</label>
+                <input type="text" name="status_orang" value="<?php echo $status_orang; ?>">
+            </div>
+
+            <div>
+                <label>Foto Orang:</label>
+                <input type="file" name="foto_orang" value="<?php echo $foto_orang; ?>">
+            </div>
+
+            <div>
+                <input type="submit" name="update" value="Edit">
+                <a href='index.php'>Cancel</a>
             </div>
         </form>
     </body>
