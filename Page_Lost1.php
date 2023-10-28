@@ -1,3 +1,7 @@
+<?php
+  set_include_path(get_include_path() . PATH_SEPARATOR . 'C:\xampp\htdocs\lost_and_finded');
+  include('backend/connect.php'); //agar index terhubung dengan database, maka connection sebagai penghubung harus di include
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Serif%3A400"/>
   <link rel="stylesheet" href="./styles/desktop-1.css"/>
+  <link rel="stylesheet" href="./style1.css"/>
 </head>
 <body>
 
@@ -27,12 +32,13 @@
         <input type="text" style="height: 50px; width: 800px; font-size: 25px;" placeholder=" Temukan apa saja, contoh dompet, tas, dll.">
         
       </div>
-      <p class="login-daftar"><a href="login-daftar.php"> login/daftar</p> </button>
+      
+      <p class="login-daftar"><a href="daftar-user.php"> login/daftar</p> </button>
         
       <div class= "tambah-barang"> 
         <img class="icon-tambah" src="./assets/plus.png"/>
 
-        <p class="barang-hilang"><p><h2> barang hilang</h2></p>
+        <p class="barang-hilang"><a href="form_crud.php?act=inper"> barang-hilang</p> </button>
       </div>
 
     </div>
@@ -41,11 +47,50 @@
 <!-- ========================================================================================================================== -->
 
 
-  <p class="baru-baru-di-temukan">Baru - baru di temukan</p>
+            <p class="baru-baru-di-temukan"><a href="baru-ditemukan.php">Baru - baru di temukan</p>
+
+              <div class="container">
+                  <?php
+                  $query = "SELECT * FROM barang_hilang ORDER BY id_brg_hilang ASC";
+                  $result = mysqli_query($connection, $query);
+
+                  if (!$result) {
+                    die("Query Error: " . mysqli_errno($connection) . " - " . mysqli_error($connection));
+                  }
+
+                  while ($row = mysqli_fetch_assoc($result)) {
+                    if (!empty($row['foto_barang'])) {
+                      $gbr_barang = 'berkas/' . $row['foto_barang'];
+                    } else {
+                      $gbr_barang = 'berkas/default.jpg';
+                    } 
+                    ?>
+                    <div class="data-item">
+                      <div class="student-img">
+                        <img src="<?php echo $gbr_barang; ?>" alt="" style="width:290px;height:350px"/>
+                      </div>
+                      <div class="student-dtl">
+                        <a href="detail_barang.php?id_brg_hilang=<?php echo $row['id_brg_hilang']; ?>">
+                        <h2><?php echo $row['brand']; ?></h2></a>
+                        <p><?php echo $row['deskripsi']; ?></p>
+                        <p><?php echo $row['tgl_brg_ditemukan']; ?></p>
+                        <p><?php echo $row['lokasi_brg_ditemukan']; ?></p>
+                        <p><?php echo $row['status_barang']; ?></p>
+                      </div>
+                    </div><br>
+                    <?php
+                  }
+                  ?>
+              </div>
+
+
+
+
 
   <div class="group1">
-    <img class="rectangle-4-jT6" src="./assets/rectangle-4.png"/>
-    <img class="rectangle-5-fbe" src="./assets/rectangle-5.png"/>
+
+    <img class="rectangle-4-jT6" src="<?php echo $row["id_brg_hilang"] . $gbr_barang; ?>"/>
+    <img class="rectangle-5-fbe" src="<?php echo $row["id_brg_hilang"] . $gbr_barang; ?>"/>
     <img class="rectangle-6-CrU" src="./assets/rectangle-6.png"/>
   </div>
 
@@ -78,9 +123,9 @@
       </div>
     </div>
   </div>
-      <!-- ========================================================================================================================== -->
+       ========================================================================================================================== -->
 
-  <div class="group2">
+ <!-- <div class="group2">
     <img class="rectangle-7-SCQ" src="./assets/rectangle-7.png"/>
     <img class="rectangle-8-n1N" src="./assets/rectangle-8.png"/>
     <img class="rectangle-9-uLt" src="./assets/rectangle-9.png"/>
