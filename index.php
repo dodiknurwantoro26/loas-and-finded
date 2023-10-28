@@ -25,6 +25,7 @@ $hasil = mysqli_query($connection, "SELECT * FROM barang_hilang ORDER by id_brg_
         <table style="width: 100%;" border="1">
             <thead>
                 <tr>
+
                     <th>id_member</th>
                     <th>id_jns_brg</th>
                     <th>brand</th>
