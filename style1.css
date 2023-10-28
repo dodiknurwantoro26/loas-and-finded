@@ -88,3 +88,30 @@ flex-shrink: 0;
     white-space: nowrap;
     flex-shrink: 0;
  }
+
+ .container {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak cukup ruang */
+    justify-content: space-between; /* Menjaga jarak di antara elemen */
+    align-items: flex-start; /* Mengatur elemen ke atas */
+    max-width: 600px; /* Lebar maksimum container */
+}
+
+
+.data-item {
+    width: 48%; /* Lebar setiap elemen data (atur sesuai kebutuhan) */
+    margin-bottom: 20px; /* Jarak antara elemen data */
+}
+
+.student-dtl {
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
