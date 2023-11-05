@@ -1,7 +1,5 @@
 <?php
-  include('connect.php'); //agar index terhubung dengan database, maka koneksi sebagai penghubung harus di include
-  set_include_path(get_include_path() . PATH_SEPARATOR . 'C:\xampp\htdocs\lost_and_finded');
-  session_start();
+  include('function. .php'); 
 
 ?>
 <!DOCTYPE html>
