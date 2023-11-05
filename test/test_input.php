@@ -1,5 +1,5 @@
 <?php
-include "test4.php";
+include "test_function.php";
 ?>
 
 

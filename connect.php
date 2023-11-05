@@ -15,5 +15,19 @@ if($connection->connect_error)
 {
     die("Koneksi Gagal");
 }
-echo"berhasil"
+echo"berhasil";
+
+
+$table="SHOW TABLES";
+$select="SELECT * FROM tb_user";
+
+$view = mysqli_query($connection, $select );
+$view_ok = mysqli_fetch_assoc($view);
+var_dump($view_ok);
+while($test=mysqli_fetch_row($view)){
+    $save[]=$test;
+    var_dump($save);  
+};
+*/
+
 ?>
