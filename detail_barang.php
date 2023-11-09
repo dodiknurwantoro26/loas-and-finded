@@ -26,14 +26,11 @@ if (isset($_GET['id_brg_hilang'])) {
         <title>Detail Barang</title>
         <link rel="stylesheet" href="./style1.css"/>
         <link rel="stylesheet" href="./styles/desktop-1.css"/>
+        <link rel="stylesheet" href="./styles/style.css"/>
     </head>
-    <div class="desktop-1">
-        <div class="bar-navigasi">
-        <img class="lost-and-finded-logo" src="./assets/lost-and-finded-logo-1.png"/>
-        </div>
-    </div>
     <body>
-        <h1>Detail Barang</h1>
+    <h1></h1>
+        
         <div class="container-form">
         <div class="detil-barang">
         <div class="form-group">

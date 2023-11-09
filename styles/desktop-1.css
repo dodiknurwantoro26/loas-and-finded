@@ -1,20 +1,21 @@
-
 html {
-	font-size:62.5%;
+  font-size: 62.5%;
 }
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul, li {
-	list-style: none;
+ul,
+li {
+  list-style: none;
 }
 input {
-	border: none;
+  border: none;
 }
 body {
   width: 144rem;
-}.desktop-1   {
+}
+.desktop-1 {
   box-sizing: border-box;
   padding: 0rem 0rem 2.6rem 0rem;
   width: 100%;
@@ -32,9 +33,6 @@ body {
   flex-shrink: 0;
   position: fixed;
   background-color: #ffeded;
-  
-  
-  
 }
 .desktop-1 .bar-navigasi .lost-and-finded-logo {
   width: 13.4rem;
@@ -42,8 +40,6 @@ body {
   object-fit: cover;
   vertical-align: top;
   flex-shrink: 0;
-  
-
 }
 .desktop-1 .bar-navigasi .search-nav {
   box-sizing: border-box;
@@ -63,7 +59,6 @@ body {
   flex-shrink: 0;
 }
 .desktop-1 .bar-navigasi .search-nav .search-box .search-banner {
-  
   box-sizing: border-box;
   padding: 1rem 1rem 0rem 0rem;
   height: 100%;
@@ -78,15 +73,13 @@ body {
   position: relative;
   object-fit: contain;
   vertical-align: top;
-
-
 }
 .desktop-1 .bar-navigasi .search-nav .login-daftar {
   margin: 0rem 4.9rem 2.4rem 0rem;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.1975;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -108,7 +101,6 @@ body {
   object-fit: contain;
   vertical-align: top;
   flex-shrink: 0;
-  
 }
 .desktop-1 .bar-navigasi .search-nav .tambah-barang .barang-hilang {
   margin-bottom: 0.1rem;
@@ -116,7 +108,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -126,7 +118,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -175,7 +167,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-pgac-jrQ .auto-group-vnty-rg8 .jam-tangan-ditemukan-jam-tangan-di-jl-serdang-baru-warna-putih-masih-nyala-ac8 {
+.desktop-1
+  .auto-group-pgac-jrQ
+  .auto-group-vnty-rg8
+  .jam-tangan-ditemukan-jam-tangan-di-jl-serdang-baru-warna-putih-masih-nyala-ac8 {
   width: 39.1rem;
   height: 4.8rem;
   position: absolute;
@@ -185,7 +180,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-pgac-jrQ .auto-group-vnty-rg8 .rectangle-10-D9J {
   width: 42.1rem;
@@ -203,7 +198,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-pgac-jrQ .auto-group-cinc-8XA .tas-wanita-ditemkan-tas-wanita-warna-biru-donker-tas-selampang-di-jlpanca-raya-3u2 {
+.desktop-1
+  .auto-group-pgac-jrQ
+  .auto-group-cinc-8XA
+  .tas-wanita-ditemkan-tas-wanita-warna-biru-donker-tas-selampang-di-jlpanca-raya-3u2 {
   width: 41.3rem;
   height: 4.8rem;
   position: absolute;
@@ -213,7 +211,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-pgac-jrQ .auto-group-cinc-8XA .rectangle-11-6cQ {
   width: 42.1rem;
@@ -230,7 +228,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-pgac-jrQ .auto-group-75mr-qK6 .tas-wanita-tas-cewe-gendong-warna-pink-ditemukan-di-jalan-raya-dekat-alfamart-Bdr {
+.desktop-1
+  .auto-group-pgac-jrQ
+  .auto-group-75mr-qK6
+  .tas-wanita-tas-cewe-gendong-warna-pink-ditemukan-di-jalan-raya-dekat-alfamart-Bdr {
   width: 40.7rem;
   height: 4.8rem;
   position: absolute;
@@ -240,7 +241,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-pgac-jrQ .auto-group-75mr-qK6 .rectangle-12-zbJ {
   width: 42.1rem;
@@ -296,7 +297,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-sdsn-DMa .auto-group-zkfw-8zL .dompet-ditemukan-hitam-ada-ktp-dan-uang-nemu-di-jlpademangan-timur-dekat-fjN {
+.desktop-1
+  .auto-group-sdsn-DMa
+  .auto-group-zkfw-8zL
+  .dompet-ditemukan-hitam-ada-ktp-dan-uang-nemu-di-jlpademangan-timur-dekat-fjN {
   width: 39.9rem;
   height: 4.8rem;
   position: absolute;
@@ -306,7 +310,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-sdsn-DMa .auto-group-zkfw-8zL .rectangle-13-9uS {
   width: 42.1rem;
@@ -324,7 +328,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-sdsn-DMa .auto-group-vh6y-EAC .buku-buku-pelajaran-nemu-di-dekat-smpn-270-jakarta-ZyA {
+.desktop-1
+  .auto-group-sdsn-DMa
+  .auto-group-vh6y-EAC
+  .buku-buku-pelajaran-nemu-di-dekat-smpn-270-jakarta-ZyA {
   width: 40.4rem;
   height: 4.8rem;
   position: absolute;
@@ -334,7 +341,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-sdsn-DMa .auto-group-vh6y-EAC .rectangle-14-RkU {
   width: 42.1rem;
@@ -351,7 +358,10 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.desktop-1 .auto-group-sdsn-DMa .auto-group-vqdr-LcY .handphone-hp-jadul-nokia-ditemukan-di-dekat-indomart-sunter-pom-bensin-kontak-rqn {
+.desktop-1
+  .auto-group-sdsn-DMa
+  .auto-group-vqdr-LcY
+  .handphone-hp-jadul-nokia-ditemukan-di-dekat-indomart-sunter-pom-bensin-kontak-rqn {
   width: 40.5rem;
   height: 4.8rem;
   position: absolute;
@@ -361,7 +371,7 @@ body {
   font-weight: 400;
   line-height: 1.1975;
   color: #000000;
-  font-family: Inria Serif, 'Source Sans Pro';
+  font-family: Inria Serif, "Source Sans Pro";
 }
 .desktop-1 .auto-group-sdsn-DMa .auto-group-vqdr-LcY .rectangle-15-KDa {
   width: 42.1rem;
@@ -372,4 +382,3 @@ body {
   border: solid 0.1rem #000000;
   box-sizing: border-box;
 }
-

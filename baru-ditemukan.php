@@ -11,23 +11,23 @@
         </div>
         <div class="contacts-area mg-b-15">
             <div class="container-fluid">
-              <?php
+            <?php
                   // jalankan query untuk menampilkan semua data diurutkan berdasarkan nim
                   $query = "SELECT * FROM tb_user LEFT JOIN area ON tb_user.area=area.id_area";
-                  $result = mysqli_query($koneksi, $query);
+                    $result = mysqli_query($koneksi, $query);
                   //mengecek apakah ada error ketika menjalankan query
-                  if(!$result){
-                      die ("Query Error: ".mysqli_errno($koneksi).
-                      " - ".mysqli_error($koneksi));
-                  }
-                  while($row = mysqli_fetch_assoc($result))
-                  {
+                    if(!$result){
+                        die ("Query Error: ".mysqli_errno($koneksi).
+                        " - ".mysqli_error($koneksi));
+                    }
+                    while($row = mysqli_fetch_assoc($result))
+                    {
                     if($row['gbr_user']!=0){
-                      $gbr_user='berkas/'.$row['gbr_user'];
+                        $gbr_user='berkas/'.$row['gbr_user'];
                     } elseif($row['jenis']=='Laki-laki'){
-                      $gbr_user='img/student/male.png';
+                        $gbr_user='img/student/male.png';
                     } else {
-                      $gbr_user='img/student/female.png';
+                        $gbr_user='img/student/female.png';
                     }
               ?>
           
