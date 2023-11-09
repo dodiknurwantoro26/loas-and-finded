@@ -31,7 +31,7 @@ body {
   align-items: center;
   flex-shrink: 0;
   position: fixed;
-  background-color: #ffffff;
+  background-color: #ffeded;
   
   
   
@@ -372,3 +372,4 @@ body {
   border: solid 0.1rem #000000;
   box-sizing: border-box;
 }
+

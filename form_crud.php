@@ -7,53 +7,11 @@
 <html>
 <head>
     <title>Tambahkan Barang Hilang</title>
-    <style>
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        .img-thumbnail {
-            max-width: 80px;
-            max-height: 80px;
-        }
-
-        .form-group button {
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style1.css"/>
 </head>
 <body>
 <?if($aksi=="inper")?>
-    <div class="container">
+    <div class="container-form">
         <h1>Laporan kehilangan</h1>
         <form method="POST" action="backend/proses_crud.php?act=inper" enctype="multipart/form-data">
             <div class="form-group">

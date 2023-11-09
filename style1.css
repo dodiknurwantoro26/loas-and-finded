@@ -94,12 +94,13 @@ flex-shrink: 0;
     flex-wrap: wrap; /* Membungkus elemen ke baris berikutnya jika tidak cukup ruang */
     justify-content: space-between; /* Menjaga jarak di antara elemen */
     align-items: flex-start; /* Mengatur elemen ke atas */
-    max-width: 600px; /* Lebar maksimum container */
+    max-width: 1600px; /* Lebar maksimum container */
+    margin-left: 50px;
 }
 
 
 .data-item {
-    width: 48%; /* Lebar setiap elemen data (atur sesuai kebutuhan) */
+    width: 25%; /* Lebar setiap elemen data (atur sesuai kebutuhan) */
     margin-bottom: 20px; /* Jarak antara elemen data */
 }
 
@@ -107,11 +108,67 @@ flex-shrink: 0;
     padding: 20px;
 }
 
-table, th, td {
-    border: 1px solid black;
+.container-form{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 70px;
 }
 
-th, td {
+.h1 {
+    font-size: 24px;
+    margin: 0
+}
+
+.p {
+    margin: 10px 0;
+  }
+
+  /* Style for the labels (e.g., 'Nama', 'Deskripsi', etc.) */
+  .p::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
     padding: 10px;
-    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.img-thumbnail {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.form-group button {
+    margin-right: 10px;
+}
+
+.detil-barang{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1975;
+    color: #000000;
 }

@@ -1,6 +1,5 @@
 <?php
-  set_include_path(get_include_path() . PATH_SEPARATOR . 'C:\xampp\htdocs\lost_and_finded');
-  include('backend/connect.php'); //agar index terhubung dengan database, maka connection sebagai penghubung harus di include
+  include('connect.php'); //agar index terhubung dengan database, maka connection sebagai penghubung harus di include
 ?>
 <!DOCTYPE html>
 <html>
@@ -87,10 +86,10 @@
 
 
 
-  <div class="group1">
+  <!--div class="group1">
 
-    <img class="rectangle-4-jT6" src="<?php echo $row["id_brg_hilang"] . $gbr_barang; ?>"/>
-    <img class="rectangle-5-fbe" src="<?php echo $row["id_brg_hilang"] . $gbr_barang; ?>"/>
+    <img class="rectangle-4-jT6" src=""/>
+    <img class="rectangle-5-fbe" src=""/>
     <img class="rectangle-6-CrU" src="./assets/rectangle-6.png"/>
   </div>
 

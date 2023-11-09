@@ -1,7 +1,6 @@
 <?php
 // Hubungkan ke database
-include('backend/connect.php');
-set_include_path(get_include_path() . PATH_SEPARATOR . 'C:\xampp\htdocs\lost_and_finded');
+include('connect.php');
 
 // Periksa koneksi database
 
@@ -15,6 +14,7 @@ if (isset($_GET['id_brg_hilang'])) {
 
     if (!$result) {
         die("Query Error: " . mysqli_error($connection));
+        
     }
 
     // Ambil data barang
@@ -24,14 +24,38 @@ if (isset($_GET['id_brg_hilang'])) {
     <html>
     <head>
         <title>Detail Barang</title>
+        <link rel="stylesheet" href="./style1.css"/>
+        <link rel="stylesheet" href="./styles/desktop-1.css"/>
     </head>
+    <div class="desktop-1">
+        <div class="bar-navigasi">
+        <img class="lost-and-finded-logo" src="./assets/lost-and-finded-logo-1.png"/>
+        </div>
+    </div>
     <body>
         <h1>Detail Barang</h1>
-        <p>Nama: <?php echo $row['brand']; ?></p>
-        <p>Deskripsi: <?php echo $row['deskripsi']; ?></p>
-        <p>Tanggal Ditemukan: <?php echo $row['tgl_brg_ditemukan']; ?></p>
-        <p>Lokasi Ditemukan: <?php echo $row['lokasi_brg_ditemukan']; ?></p>
-        <p>Status: <?php echo $row['status_barang']; ?></p>
+        <div class="container-form">
+        <div class="detil-barang">
+        <div class="form-group">
+                <label for="foto_barang">Foto Barang</label>
+                <img src="<?php echo 'berkas/' . $row['foto_barang'];?> "alt="" style="width:290px;height:350px"/>
+            </div>
+        <div class="form-group">
+                <label for="nm_barang">Nama Barang</label>
+                <input type="text" class="form-control" value="<?php echo $row['brand'];?>" name="nm_barang" readonly />
+            </div>
+        <div class="form-group">
+                <label for="deskripsi">Deskripsi</label>
+                <input type="text" class="form-control" value="<?php echo $row['deskripsi']; ?>" name="deskripsi" readonly />
+            </div>
+        <div class="form-group">
+                <label for="tgl_brg_ditemukan">Tanggal Ditemukan</label>
+                <input type="text" class="form-control" value="<?php echo $row['tgl_brg_ditemukan']; ?>" name="tgl_brg_ditemukan" readonly />
+            </div>
+        <p>Lokasi Ditemukan : <?php echo $row['lokasi_brg_ditemukan']; ?></p>
+        <p>Status : <?php echo $row['status_barang']; ?></p>
+        </div>
+        </div>
 
         <!-- Tambahkan tautan atau elemen lain sesuai kebutuhan Anda -->
 
